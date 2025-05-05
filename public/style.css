@@ -1,0 +1,99 @@
+:root {
+    --pastel-pink: #ffd4da;
+    --pastel-blue: #cde7f0;
+    --pastel-green: #d5f5e3;
+    --pastel-yellow: #fff6d1;
+    --pastel-purple: #dcc7f7;
+    --pastel-peach: #ffd8cc;
+    --text-dark: #3a3a3a;
+    --pastel-cream: #fef9f4;
+}
+
+body {
+    background: var(--pastel-cream);
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-dark);
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-pills .nav-link {
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--pastel-peach);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(255, 216, 204, 0.4);
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pastel-purple);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.card-title {
+    font-weight: 700;
+    color: var(--pastel-purple);
+}
+
+.icon-emoji {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Pastel backgrounds for cards depending on the type */
+.card-pink {
+    background-color: var(--pastel-pink);
+}
+.card-green {
+    background-color: var(--pastel-green);
+}
+.card-yellow {
+    background-color: var(--pastel-yellow);
+}
+.card-purple {
+    background-color: var(--pastel-purple);
+    color: white;
+}
+.card-blue {
+    background-color: var(--pastel-blue);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    .nav-pills .nav-link {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+    .icon-emoji {
+        font-size: 2.5rem;
+    }
+}
