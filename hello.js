@@ -44,11 +44,15 @@ var server = http.createServer((req, res) => {
         case 'home':
             fileLocation = 'pages/index.html';
             break;
-        case 'about':
-            fileLocation = 'pages/about.html';
+
+        case 'detail-mhs':
+            fileLocation = 'pages/dosen/detail.html';
             break;
         case 'edit':
             fileLocation = 'pages/dosen/edit.html';
+            break;
+        case 'create':
+            fileLocation = 'pages/dosen/create.html';
             break;
         default:
             fileLocation = 'pages/index.html';

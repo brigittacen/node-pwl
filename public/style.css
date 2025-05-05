@@ -97,3 +97,24 @@ h1, h2, h3 {
         font-size: 2.5rem;
     }
 }
+
+}
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    .nav-pills .nav-link {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+    .icon-emoji {
+        font-size: 2.5rem;
+    }
+    .student-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .student-actions {
+        margin-top: 0.5rem;
+    }
+}
